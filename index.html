@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header-container">
+      <header>
+        <div class="logo">
+          <a href="#">Miguel</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#home" onclick="select()">HOME</a></li>
+            <li><a href="#aboutme" onclick="select()">ABOUT ME</a></li>
+            <li><a href="#skills" onclick="select()">SKILLS</a></li>
+            <li><a href="#curriculum" onclick="select()">CURRICULUM</a></li>
+            <li><a href="#portfolio" onclick="select()">PORTFOLIO</a></li>
+            <li><a href="#contact" onclick="select()">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="showHideMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!--HOME-->
+    <section id="home" class="home">
+      <div class="banner-content">
+        <div class="img-caontainer">
+          <img src="src/img/stock.jpg" alt="Mi foto" />
+        </div>
+        <h1>MIGUEL GAVIRIA</h1>
+        <h2>System Engineer</h2>
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-skype"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!--ABOUT ME-->
+    <section id="aboutme" class="aboutme">
+      <div class="section-content">
+        <h2>About Me</h2>
+        <p>
+          <span>My name is Miguel Gaviria. </span>Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Corrupti magni hic asperiores deserunt
+          cum. Porro amet est, error harum saepe voluptatibus, nostrum eius
+          delectus similique ducimus modi, velit eligendi optio?
+        </p>
+        <div class="row">
+          <!--personal info-->
+          <div class="col">
+            <h3>Personal Information</h3>
+            <ul>
+              <li>
+                <strong>Birthday</strong>
+                10-11-2001
+              </li>
+              <li>
+                <strong>Cellphone</strong>
+                6666666666
+              </li>
+              <li>
+                <strong>Email</strong>
+                mgaviri@gmail.com
+              </li>
+              <li>
+                <strong>Webpage</strong>
+                www.ebpa.ge
+              </li>
+              <li>
+                <strong>Adress</strong>
+                cl 777 # 77 b 77
+              </li>
+              <li>
+                <strong>Job</strong>
+                Boss
+              </li>
+            </ul>
+          </div>
+          <!--Interests-->
+          <div class="col">
+            <h3>Interests</h3>
+            <div class="interests-container">
+              <div class="interest">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>GAMES</span>
+              </div>
+              <div class="interest">
+                <i class="fa-solid fa-chess"></i>
+                <span>CHESS</span>
+              </div>
+              <div class="interest">
+                <i class="fa-solid fa-music"></i>
+                <span>MUSIC</span>
+              </div>
+              <div class="interest">
+                <i class="fa-solid fa-code"></i>
+                <span>CODING</span>
+              </div>
+              <div class="interest">
+                <i class="fa-solid fa-book"></i>
+                <span>BOOKS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          Download CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <!--SKILLS-->
+    <section id="skills" class="skills">
+      <div class="section-content">
+        <h2>Skills</h2>
+        <div class="row">
+          <!--Technical skills-->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="skill-bar">
+                <div class="progress">
+                  <span>5%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="skill-bar">
+                <div class="progress">
+                  <span>5%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>REACT</span>
+              <div class="skill-bar">
+                <div class="progress">
+                  <span>5%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>C++</span>
+              <div class="skill-bar">
+                <div class="progress">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Professional skills-->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Communication</span>
+              <div class="skill-bar">
+                <div class="progress">
+                  <span>10%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creativity</span>
+              <div class="skill-bar">
+                <div class="progress">
+                  <span>11%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedication</span>
+              <div class="skill-bar">
+                <div class="progress">
+                  <span>9%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Project Management</span>
+              <div class="skill-bar">
+                <div class="progress">
+                  <span>14%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CURRICULUM-->
+    <section>
+      <section id="curriculum" class="curriculum">
+        <div class="section-content">
+          <h2>Curriculum</h2>
+          <div class="row">
+            <div class="col left">
+              <h3>Education</h3>
+              <div class="item lft">
+                <h4>System engineer</h4>
+                <span class="house">EIA</span>
+                <span class="date">2020 - 2024</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
+                  nihil unde est deserunt voluptate fugiat vel suscipit at nemo
+                  corrupti totam commodi iste optio vero magnam cumque ipsa
+                  placeat earum!
+                </p>
+                <div class="connectori">
+                  <div class="circlei"></div>
+                </div>
+              </div>
+              <div class="item lft">
+                <h4>System engineer</h4>
+                <span class="house">EIA</span>
+                <span class="date">2020 - 2024</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
+                  nihil unde est deserunt voluptate fugiat vel suscipit at nemo
+                  corrupti totam commodi iste optio vero magnam cumque ipsa
+                  placeat earum!
+                </p>
+                <div class="connectori">
+                  <div class="circlei"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col right">
+              <h3>Experience</h3>
+              <div class="item rght">
+                <h4>Full Stack Developer</h4>
+                <span class="house">Microsoft</span>
+                <span class="date">2025</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
+                  nihil unde est deserunt voluptate fugiat vel suscipit at nemo
+                  corrupti totam commodi iste optio vero magnam cumque ipsa
+                  placeat earum!
+                </p>
+                <div class="connectord">
+                  <div class="circled"></div>
+                </div>
+              </div>
+              <div class="item rght">
+                <h4>Full Stack Developer</h4>
+                <span class="house">Microsoft</span>
+                <span class="date">2025</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
+                  nihil unde est deserunt voluptate fugiat vel suscipit at nemo
+                  corrupti totam commodi iste optio vero magnam cumque ipsa
+                  placeat earum!
+                </p>
+                <div class="connectord">
+                  <div class="circled"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!--PORTFOLIO-->
+    <section id="portfolio" class="portfolio">
+      <div class="section-content">
+        <h2>PORTFOLIO</h2>
+        <div class="gallery">
+          <div class="project">
+            <img src="/src/img/stock.jpg" alt="" />
+            <div class="overlay">
+              <h3>Project 1</h3>
+              <p>A project</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="/src/img/stock.jpg" alt="" />
+            <div class="overlay">
+              <h3>Project 2</h3>
+              <p>A project</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="/src/img/stock.jpg" alt="" />
+            <div class="overlay">
+              <h3>Project 3</h3>
+              <p>A project</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="/src/img/stock.jpg" alt="" />
+            <div class="overlay">
+              <h3>Project 4</h3>
+              <p>A project</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="/src/img/stock.jpg" alt="" />
+            <div class="overlay">
+              <h3>Project 5</h3>
+              <p>A project</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="/src/img/stock.jpg" alt="" />
+            <div class="overlay">
+              <h3>Project 6</h3>
+              <p>A project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CONTACT-->
+    <section id="contact" class="contact">
+      <div class="section-content">
+        <h2>CONTACT</h2>
+        <div class="row">
+          <!--Form-->
+          <div class="col">
+            <input type="text" placeholder="Your name" />
+            <input type="text" placeholder="Phone number" />
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Subject" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <button>
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!--Map-->
+          <div class="col">
+            <img src="/src/img/locat.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Colombia
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile"></i>
+                  Call me: 6666 - 6666666
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email me: email@email.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+      <a href="#home" class="up">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-skype"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-solid fa-rss"></i></a>
+      </div>
+    </footer>
+    <script src="/src/script/script.js"></script>
+  </body>
+</html>
